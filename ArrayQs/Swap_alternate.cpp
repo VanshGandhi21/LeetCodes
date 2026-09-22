@@ -18,10 +18,19 @@ void swaped(int arr[], int size){
 
 int main(){
 
-    int arr[10] = {1,2,3,4,5,6,7,8,9,11};
+    int size;
+    cout << "Enter the size of an Array: ";
+    cin >> size;
 
-    swaped(arr , 10);
-    PrintArray(arr, 10);
+    int arr[10];
+    cout << "Enter the Array: ";
+
+    for (int i = 0; i<size ; i++){
+        cin >> arr[i];
+    }
+
+    swaped(arr , size);
+    PrintArray(arr, size);
 
     return 0;
 
