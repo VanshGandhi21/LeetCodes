@@ -35,3 +35,10 @@ int main(){
     return 0;
 
 }
+
+// # You can also swap values without using "Swap" function..
+// here is the code for swaping values without using Swap function
+
+// int temp = int arr[1];
+// int arr[1] = int arr[0];
+// int arr[0] = int temp;
