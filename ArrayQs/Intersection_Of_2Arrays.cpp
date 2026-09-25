@@ -26,3 +26,6 @@ int main(){
     return 0;
 
 }
+
+// This is not an optimal solution so..
+// I"ll find it soon.
