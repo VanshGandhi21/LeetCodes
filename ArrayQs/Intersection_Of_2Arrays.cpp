@@ -16,13 +16,13 @@ int main(){
         for (int j = 0 ; j < sizeof(arr2) / sizeof(arr2[0]); j++){
             if(element == arr2[j]){
 
-            ans = ans + element;
+            cout << element << " ";
             arr2[j] = INT_MIN;
             break;
             }
         }
     }
 
-    cout << ans;
+    return 0;
 
 }
