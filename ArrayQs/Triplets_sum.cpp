@@ -31,3 +31,7 @@ int main(){
     }
     
 }
+
+// So this is not the optimal solution for this problem.
+// This is the bruteForce solution of this problem.
+// I will find optimal solution soon.
