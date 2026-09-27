@@ -19,5 +19,7 @@ int main(){
     }
     sort(ans.begin(), ans.end());
     return ans;
-    
+
 }
+
+// Same code is submited on the coding ninjas.
