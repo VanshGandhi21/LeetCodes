@@ -20,9 +20,8 @@ int main(){
     }
     sort(ans.begin(), ans.end());
     for(int i =0 ; i<ans.size();i++){
-        // cout << ans[i][0] << " " << ans[i][1] << endl;
+        cout << ans[i][0] << " " << ans[i][1] << endl;
     }
     
 }
 
-// Same code is submited on the coding ninjas.
