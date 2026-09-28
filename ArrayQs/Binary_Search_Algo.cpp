@@ -25,8 +25,6 @@ int binarySearch(int arr[] , int n, int key){
 
  main(){
 
-    
-
     int Evenarr[6] = {3,6,7,12,45,98};
     int Oddarr[5] = {2,7,34,67,88};
 
