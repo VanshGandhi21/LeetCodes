@@ -1,45 +1,41 @@
 #include<iostream>
 using namespace std;
 
-int Search(int arr[], int n,int key){
+int binarySearch(int arr[] , int n, int key){
+
     int start = 0;
     int end = n-1;
+    
+    int mid = (start + end)/2;
 
-    int mid = start+(end-start)/2;
+    while(start <= end){
 
-    while(start<=end){
-
-        if(arr[mid]==key){
+        if(arr[mid] == key){
             return mid;
         }
-        if(arr[mid]>key){
-            end = mid-1;
-        }
-        else{
+        if(arr[mid] < key){
             start = mid+1;
         }
-        mid = start+(end-start)/2;
+        else{
+            end = mid-1;
+        }
     }
+    return -1;
 }
 
+ main(){
 
-int main(){
+    
 
-    int size;
-    cout << "Enter the size of an Array: ";
-    cin >> size;
+    int Evenarr[6] = {3,6,7,12,45,98};
+    int Oddarr[5] = {2,7,34,67,88};
 
-    int arr[10];
-    cout << "Enter the Array: ";
-    for(int i = 0; i<size ; i++ ){
-        cin >> arr[i];
-    }
-    int key ;
-    cout << "Enter the element you want to find: ";
-    cin>> key;
+    int FindEvenKey = binarySearch(Evenarr, 6, 98);
+    int FindOddKey = binarySearch(Oddarr, 5, 7);
 
-int Find = Search(arr,size, key);
-cout << "The Element is present at index: "<< Find<< endl;
+    cout << "The Even key is at index: " << FindEvenKey << endl;
+    cout << "The Odd key is at index: " << FindOddKey << endl;
 
+    return 0;
     
 }
