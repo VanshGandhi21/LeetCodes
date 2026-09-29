@@ -8,7 +8,7 @@ int binarySearch(int arr[], int n, int key)
 
     while (start <= end)
     {
-        int mid = (start + end) / 2;
+        int mid = start + (end-start)/2;
 
         cout << "Checking index: " << mid << endl;
 
@@ -24,6 +24,7 @@ int binarySearch(int arr[], int n, int key)
         {
             end = mid - 1;
         }
+        mid = start + (end-start)/2;
     }
 
     return -1;
