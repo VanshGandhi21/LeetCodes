@@ -56,3 +56,6 @@ int main(){
 
     return 0;
 }
+
+// We have used binary earch algo for this solution 
+// It is the Optimal solution.
