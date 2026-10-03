@@ -19,5 +19,5 @@ int main(){
         }
         mid = start + (end-start)/2;
     }
-    cout << start;
+    cout << "Peak Element is at index: " <<  start << endl;
 }
