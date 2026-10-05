@@ -18,6 +18,7 @@ long long int SQRT(int number){
             return mid;
         }
         else if (square < number){
+            ans = mid;
             start = mid +1;
         }
         else if(square > number){
