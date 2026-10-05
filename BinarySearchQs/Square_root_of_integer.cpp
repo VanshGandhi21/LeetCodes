@@ -1,16 +1,18 @@
 #include<iostream>
 using namespace std;
 
-int SQRT(int nunber){
+// This SQRT function which i have made is nothing but...
+// A simple binarysearch funtion with a bit diffrenet conditions.
+long long int SQRT(int number){
 
     int start = 0;
     int end = number;
 
-    int mid = start +(end -start)/2;
-    int ans = -1;
+    long long int mid = start +(end -start)/2;
+    long long ans = -1;
 
     while(start <= end ){
-        int square = mid*mid;
+      long long int square = mid*mid;
 
         if(square == number){
             return mid;
@@ -24,7 +26,7 @@ int SQRT(int nunber){
         mid = start + (end -start)/2;
 
     }
-    return -1;
+    return ans;
 
 }
 
