@@ -1,1 +1,9 @@
-// Solving Square root of integer problem.
+#include<iostream>
+using namespace std;
+
+
+int main(){
+
+    int number = 36;
+
+}
