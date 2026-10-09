@@ -51,7 +51,7 @@ int main(){
 
     int tempSolv = SQRTinteger(n);
 
-    // cout << "The answer is: " << tempSolv << endl;
+    // cout << "The answer is: " << tempSolv << endl; " This line give un frecise answer like only in integer not in floating point."
     cout << "The Precise answer is:  " << MorePrecision(n , 3 , tempSolv) << endl;
     return 0;
 
