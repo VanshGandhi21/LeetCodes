@@ -29,9 +29,19 @@ long long int SQRTinteger(int number){
 
 }
 
-// double MorePrecision(int n ; int precision ; int tempSolv){
+double MorePrecision(int n , int precision , int tempSolv){
+    double factor = 1;
+    double ans = tempSolv;
 
-// }
+    for ( int i = 0; i<precision ; i++){
+        factor = factor/10;
+
+        for(double j = ans ; j*j<n ; j = j+factor){
+            ans = j;
+        }
+    }
+    return ans;
+}
 
 int main(){
 
@@ -41,8 +51,8 @@ int main(){
 
     int tempSolv = SQRTinteger(n);
 
-    cout << "The answer is: " << tempSolv << endl;
-
+    // cout << "The answer is: " << tempSolv << endl;
+    cout << "The Precise answer is:  " << MorePrecision(n , 3 , tempSolv) << endl;
     return 0;
 
 }
