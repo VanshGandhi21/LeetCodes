@@ -56,3 +56,5 @@ int allocateBooks(vector<int> arr, int n, int m) {
 }
 
 // So this is the sulution which is provided by the CodeHelp Youtube chennal.
+// This is the best and optimal solution. And in this solution we have used binary search algorithm.
+// currently i am working on this problem to make it more organized. And easy to understand.
