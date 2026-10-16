@@ -1,3 +1,5 @@
+// So this is the sulution which is provided by the CodeHelp Youtube chennal.
+
 #include<vector>
 using namespace std;
 
@@ -52,3 +54,5 @@ int allocateBooks(vector<int> arr, int n, int m) {
     }
     return ans;
 }
+
+// So this is the sulution which is provided by the CodeHelp Youtube chennal.
