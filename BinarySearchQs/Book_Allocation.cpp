@@ -1,15 +1,14 @@
-// So this is the sulution which is provided by the CodeHelp Youtube chennal.
-
 #include<iostream>
 #include<vector>
 using namespace std;
 
 int main(){
-
+    
     vector<int>arr ={2,2,3,3,4,4,1} ;
-
+    
     
 }
+// So this is the sulution which is provided by the CodeHelp Youtube chennal.
 
 // #include<vector>
 // using namespace std;
