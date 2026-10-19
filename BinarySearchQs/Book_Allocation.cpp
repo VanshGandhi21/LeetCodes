@@ -2,10 +2,23 @@
 #include<vector>
 using namespace std;
 
+int allocationBooks(vector<int> arr, int n , int m){
+
+    int s = 0;
+    int sum = 0;
+
+    for(int i = 0 ; i<n ; i++){
+        sum += arr[i];
+    }
+}
+
+
 int main(){
     
     vector<int>arr ={2,2,3,3,4,4,1} ;
-    
+    int n = sizeof(arr);
+    int m = 2;
+
     
 }
 // So this is the sulution which is provided by the CodeHelp Youtube chennal.
