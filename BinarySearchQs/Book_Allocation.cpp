@@ -7,18 +7,21 @@ bool isPossible(vector<int>arr , int n , int m , int mid){
     int studentCount = 1;
     int PageSum = 0;
 
-    for (int i = 0; i<n , i++){
+    for (int i = 0; i<n ; i++){
         if(PageSum + arr[i] <= mid){
             PageSum += arr[i];
         }
         else{
             studentCount ++;
-            if(studentCount > m){
-
+            if(studentCount > m || arr[i] > mid){
+                return false;
             }
+            PageSum = 0;
+            PageSum += arr[i];
+
         }
     }
-
+    return true;
 }
 
 
@@ -27,17 +30,17 @@ int allocationBooks(vector<int> arr, int n , int m){
 
     int start = 0;
     int sum = 0;
-    int end = sum;
-
+    
     for(int i = 0 ; i<n ; i++){
         sum += arr[i];
     }
+    int end = sum;
 
     int mid= start + (end-start)/2;
     int ans = -1;
     while(start<=end){
 
-        for(isPossible(mid,arr,n,m)){
+        if(isPossible(arr , n , m , mid)){
             ans = mid;
             end = mid-1;
         }
@@ -53,10 +56,12 @@ int allocationBooks(vector<int> arr, int n , int m){
 int main(){
     
     vector<int>arr ={10,20,30,40} ;
-    int n = sizeof(arr);
+    int n = arr.size();
     int m = 2;
 
-    
+    cout << allocationBooks(arr, n, m);
+
+    return 0;
 }
 // So this is the sulution which is provided by the CodeHelp Youtube chennal.
 
