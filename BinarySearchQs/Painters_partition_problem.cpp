@@ -3,5 +3,6 @@ using namespace std;
 
 int main(){
 
-    // code
+    // code of Painters Partition problem 
+    // Solving....
 }
