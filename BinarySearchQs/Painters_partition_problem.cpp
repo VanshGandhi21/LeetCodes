@@ -11,7 +11,7 @@ bool isPossible(vector<int>arr ,int n ,  int k , int mid){
     for(int i = 0; i<n ; i++ ){
 
         if(time + arr[i] <= mid){
-            time = arr[i];
+            time += arr[i];
         }
         else{
             painters++;
@@ -66,8 +66,8 @@ int main(){
 
     int Solution = MinimumTime(arr , n , k);
 
-    cout << 'Solution is' << Solution << endl; 
+    cout << "Solution is: " << Solution << endl; 
 
     return 0;
-         
+
 }
