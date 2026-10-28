@@ -31,3 +31,9 @@ int main(){
     cout << endl;
     return 0;
 }
+
+// So selection sort is a unstable algorithm.
+// Reason:-
+// Selection Sort is unstable because it selects the minimum element from the unsorted
+// part and swaps it with the first element of that part. This swap can change 
+// the relative order of equal elements.
