@@ -3,6 +3,13 @@ using namespace std;
 
 void InsertionSort(){
 
+    for(int i = 1 ; i<n ; i++){
+
+        for(){
+            
+        }
+    }
+
     
 }
 
